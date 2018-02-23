@@ -15,15 +15,8 @@ public class MoneyTest {
             System.out.println( "Money Class 구현을 완료 하였습니다." );
         }
         
-        
-//        System.out.println(five);
-//    	System.out.println(two.add(three));
-//    	System.out.println(three);
-//    	System.out.println(five.minus( two ) );
-//    	System.out.println(ten);
-//    	System.out.println(five.multiply( two ));
-//    	System.out.println(two);
-//    	System.out.println(ten.devide(five));
+
+    	
     	
     	
        

@@ -4,9 +4,9 @@ public class Money {
 
 	private int amount;
 	
-    int result;
+    private int result;
     
-    int receive;
+    private int receive;
     
 	public Money(int amount) {
 		
@@ -14,54 +14,45 @@ public class Money {
 		
 	}
     
-	@Override
-	public String toString() {
-		String to = Integer.toString(amount);
-		return to;
-	}
+	
+//	@Override
+//	public String toString() {
+//		String to = Integer.toString(amount);
+//		return to;
+//	}
 
 	
 	
-	public String add(Money m) {
-		receive = m.amount;
+	public Money add(Money m) {
+
+//		receive = m.amount;
+//		
+//		result = this.amount + receive;
 		
-		result = this.amount + receive;
-		
-		String s = Integer.toString(result);
+		Money r = new Money(this.amount + m.amount);
 			
-		return s;
+		return r;
 		
 	}
 
-	public String minus(Money m) {
-		receive = m.amount;
+	public Money minus(Money m) {
 		
-		result = this.amount - receive;
-		
-		String s = Integer.toString(result);
-
-		return s;
+		Money r = new Money(this.amount - m.amount);
+			
+		return r;
 	}
 	
-	public String multiply(Money m) {
-		receive = m.amount;
+	public Money multiply(Money m) {
 		
-		result = this.amount * receive;
+		Money r = new Money(this.amount * m.amount);
 		
-		String s = Integer.toString(result);
-		
-		
-		return s;
+		return r;
 	}
 	
-	public String devide(Money m) {
+	public Money devide(Money m) {
 		
-		receive = m.amount;
+		Money r = new Money(this.amount / m.amount);
 		
-		result = this.amount / receive;
-		
-		String s = Integer.toString(result);
-
-		return s;
+		return r;
 	}
 }
