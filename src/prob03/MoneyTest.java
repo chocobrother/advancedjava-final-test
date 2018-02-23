@@ -8,11 +8,24 @@ public class MoneyTest {
         Money three = new Money( 3 );
         Money ten   = new Money( 10 );
         
-        if(    five.equals( two.add( three ) )
+        if(five.equals( two.add( three ) )
             && three.equals( five.minus( two ) )
             && ten.equals( five.multiply( two ) )
             && two.equals( ten.devide( five ) ) )  {
             System.out.println( "Money Class 구현을 완료 하였습니다." );
         }
+        
+        
+//        System.out.println(five);
+//    	System.out.println(two.add(three));
+//    	System.out.println(three);
+//    	System.out.println(five.minus( two ) );
+//    	System.out.println(ten);
+//    	System.out.println(five.multiply( two ));
+//    	System.out.println(two);
+//    	System.out.println(ten.devide(five));
+    	
+    	
+       
 	}
 }

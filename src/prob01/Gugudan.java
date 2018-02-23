@@ -7,8 +7,8 @@ public class Gugudan {
 	static int resultNumber = 0;
 	
 	public static void main( String[] args ) {
-		int l = randomize( 1, 9 );
-		int r = randomize( 1, 9 );
+		int l = randomize( 1, 9 ); 
+		int r = randomize( 1, 9 ); 
 		
 		resultNumber = l * r;
 
@@ -18,6 +18,7 @@ public class Gugudan {
 		
 		System.out.println( l + " x " + r + " = ?" );
 		
+		//정답판 
 		int length = answerNumbers.length;
 		for( int i = 0; i < length; i++ ) {
 			if( i % 3 == 0 ) {
@@ -36,6 +37,15 @@ public class Gugudan {
 		//
 		//  이 부분에 적당한 코드를 작성합니다.  
 		//
+		int correct = s.nextInt();
+		if(correct == resultNumber) {
+			System.out.println("정답/오답 : 정답 "  );
+		}else {
+			System.out.println("정답/오답 : 오답 " );
+		}
+		
+		
+		
 	}
 
 	private static int randomize( int lNum, int rNum ) {
@@ -57,7 +67,7 @@ public class Gugudan {
 	        
 	        boolean evaluted = false;
 	        for( int i = 0; i < occupied; i++ ) {
-	        	if( /* 이 부분에 적당 조건의 코드를 입력 합니다. */ ) {
+	        	if( COUNT_ANSWER_NUMBER == occupied ) {
 	        		evaluted = true;
 	        		break;
 	        	}
